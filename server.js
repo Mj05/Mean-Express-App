@@ -27,6 +27,15 @@ res.render('home.hbs', {
 });
 });
 
+app.get('/projects',(req, res) => {
+res.render('projects.hbs', {
+	pageTitle: 'Projects Page',
+	copyRight: 'copyright@2018'
+});
+});
+
 app.listen(port, () => {
 console.log(`Server is up on port ${port}...`);
+// https://gentle-hamlet-90959.herokuapp.com
 });
+
